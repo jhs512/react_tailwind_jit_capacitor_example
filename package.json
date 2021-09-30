@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.3.6",
+    "concurrently": "^6.2.2",
     "daisyui": "^1.14.2",
     "postcss": "^8.3.8",
     "postcss-import": "^14.0.2",
@@ -20,9 +21,11 @@
   },
   "scripts": {
     "dev:css": "npx tailwindcss -i src/source.css -o src/index.css --watch --postcss",
-    "build:css": "SET NODE_ENV=production & npx tailwindcss -i src/source.css -o src/index.css --postcss --minify",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev:js": "react-scripts start",
+    "start": "concurrently \"npm run dev:css\" \"npm run dev:js\"",
+    "build:css": "SET NODE_ENV=production & npx tailwindcss -i src/source.css -o src/index.css --postcss",
+    "build:js": "react-scripts build",
+    "build": "npm run build:css && npm run build:js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
