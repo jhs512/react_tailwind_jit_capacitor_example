@@ -13,6 +13,9 @@
     "web-vitals": "^1.1.2"
   },
   "devDependencies": {
+    "@capacitor/android": "^3.2.4",
+    "@capacitor/cli": "^3.2.4",
+    "@capacitor/core": "^3.2.4",
     "autoprefixer": "^10.3.6",
     "concurrently": "^6.2.2",
     "daisyui": "^1.14.2",
