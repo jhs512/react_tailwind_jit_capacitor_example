@@ -24,9 +24,7 @@ Use a more readable tab size (opinionated).
 */
 
 html {
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
 }
 
 /**
@@ -98,8 +96,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /**
@@ -454,16 +451,6 @@ img {
 
 textarea {
   resize: vertical;
-}
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-  opacity: 1;
-  color: #9ca3af;
-}
-
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1;
-  color: #9ca3af;
 }
 
 input::placeholder,
@@ -1244,16 +1231,6 @@ html{
   --er: 14 100% 57.1%;
 }
 
-@-webkit-keyframes spin{
-  0%{
-    transform: rotate(0deg);
-  }
-
-  to{
-    transform: rotate(1turn);
-  }
-}
-
 @keyframes spin{
   0%{
     transform: rotate(0deg);
@@ -1261,20 +1238,6 @@ html{
 
   to{
     transform: rotate(1turn);
-  }
-}
-
-@-webkit-keyframes button-pop{
-  0%{
-    transform: scale(var(--btn-focus-scale,.95));
-  }
-
-  40%{
-    transform: scale(1.02);
-  }
-
-  to{
-    transform: scale(1);
   }
 }
 
@@ -1292,20 +1255,6 @@ html{
   }
 }
 
-@-webkit-keyframes checkmark{
-  0%{
-    background-position-y: 5px;
-  }
-
-  50%{
-    background-position-y: -2px;
-  }
-
-  to{
-    background-position-y: 0;
-  }
-}
-
 @keyframes checkmark{
   0%{
     background-position-y: 5px;
@@ -1317,20 +1266,6 @@ html{
 
   to{
     background-position-y: 0;
-  }
-}
-
-@-webkit-keyframes radiomark{
-  0%{
-    box-shadow: 0 0 0 12px hsl(var(--b1)) inset,0 0 0 12px hsl(var(--b1)) inset,var(--focus-shadow);
-  }
-
-  50%{
-    box-shadow: 0 0 0 3px hsl(var(--b1)) inset,0 0 0 3px hsl(var(--b1)) inset,var(--focus-shadow);
-  }
-
-  to{
-    box-shadow: 0 0 0 4px hsl(var(--b1)) inset,0 0 0 4px hsl(var(--b1)) inset,var(--focus-shadow);
   }
 }
 
@@ -1346,6 +1281,14 @@ html{
   to{
     box-shadow: 0 0 0 4px hsl(var(--b1)) inset,0 0 0 4px hsl(var(--b1)) inset,var(--focus-shadow);
   }
+}
+
+.h-10{
+  height: 2.5rem;
+}
+
+.w-\[100px\]{
+  width: 100px;
 }
 
 .bg-red-500{
